@@ -18,19 +18,19 @@
 <meta property="og:description" content="hexo+github搭建自己的博客1、安装node环境!  https://nodejs.org/en/  下载之后安装即可。2、安装git!  https://git-scm.com/downloads  链接仅供参考，可自行下载安装。3、有github账号，没有的在https://github.com/上注册一个。
 
 4、打开终端，输入命令，安装hexo（如果报错去掉sudo，sudo在ma">
-<meta property="og:image" content="http://yoursite.com/./1499654304791.png">
-<meta property="og:image" content="http://yoursite.com/1499654575466.png">
-<meta property="og:image" content="http://yoursite.com/1499655917793.png">
-<meta property="og:image" content="http://yoursite.com/1499655235172.png">
-<meta property="og:image" content="http://yoursite.com/1499656951699.png">
-<meta property="og:image" content="http://yoursite.com/1499660895783.png">
-<meta property="og:updated_time" content="2017-07-10T05:06:16.000Z">
+<meta property="og:image" content="http://yoursite.com/./1.png">
+<meta property="og:image" content="http://yoursite.com/2.png">
+<meta property="og:image" content="http://yoursite.com/3.png">
+<meta property="og:image" content="http://yoursite.com/4.png">
+<meta property="og:image" content="http://yoursite.com/5.png">
+<meta property="og:image" content="http://yoursite.com/6.png">
+<meta property="og:updated_time" content="2017-07-10T06:12:33.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="我的个人博客生成记">
 <meta name="twitter:description" content="hexo+github搭建自己的博客1、安装node环境!  https://nodejs.org/en/  下载之后安装即可。2、安装git!  https://git-scm.com/downloads  链接仅供参考，可自行下载安装。3、有github账号，没有的在https://github.com/上注册一个。
 
 4、打开终端，输入命令，安装hexo（如果报错去掉sudo，sudo在ma">
-<meta name="twitter:image" content="http://yoursite.com/./1499654304791.png">
+<meta name="twitter:image" content="http://yoursite.com/./1.png">
   
   
     <link rel="icon" href="/favicon.png">
@@ -191,7 +191,7 @@
 <pre><code>mkdir myBlog
 cd myBlog
 hexo init
-</code></pre><p>之后你会发现文件夹里是这样的：<br><img src="./1499654304791.png" alt="Alt text"></p>
+</code></pre><p>之后你会发现文件夹里是这样的：<br><img src="./1.png" alt="Alt text"></p>
 <blockquote>
 <p>6、生成静态页面</p>
 </blockquote>
@@ -200,7 +200,7 @@ hexo init
 <p>7、本地启动服务器调试</p>
 </blockquote>
 <pre><code>hexo server
-</code></pre><p>启动成功之后访问<a href="http://localhost:4000就可以看到你的主页：" target="_blank" rel="external">http://localhost:4000就可以看到你的主页：</a><br><img src="1499654575466.png" alt="Alt text"></p>
+</code></pre><p>启动成功之后访问<a href="http://localhost:4000就可以看到你的主页：" target="_blank" rel="external">http://localhost:4000就可以看到你的主页：</a><br><img src="2.png" alt="Alt text"></p>
 <blockquote>
 <p>8、接下来可根据自己爱好换主题，（我是先换主题再部署到github）按照主题列表教程就能安装成功</p>
 </blockquote>
@@ -211,11 +211,11 @@ hexo init
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">修改hexo根目录下的 _config.yml ： theme: yilia</div></pre></td></tr></table></figure>
 <p>更新</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">cd themes/yilia</div><div class="line">git pull</div></pre></td></tr></table></figure>
-<p>主题配置（主题配置文件在主目录下的_config.yml，请根据自己需要修改吧）<br><img src="1499655917793.png" alt="Alt text"></p>
-<p>注意：安装配置好了之后需要重新生成 hexo generate –deploy 然后启动服务hexo server就能看到这样的（头像是我换了的）<br><img src="1499655235172.png" alt="Alt text"></p>
+<p>主题配置（主题配置文件在主目录下的_config.yml，请根据自己需要修改吧）<br><img src="3.png" alt="Alt text"></p>
+<p>注意：安装配置好了之后需要重新生成 hexo generate –deploy 然后启动服务hexo server就能看到这样的（头像是我换了的）<br><img src="4.png" alt="Alt text"></p>
 <hr>
 <p>到了部署到github上。。。部署这块我是完全参照<a href="http://baixin.io/2015/08/HEXO%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/" target="_blank" rel="external">潘大神</a>的来的，他的部署过程很详细，评论下挺多坑，他都一一解答了的，不做详细介绍了，就谈谈我在部署过程中遇到的一点坑。</p>
-<p>小坑一：我在部署过程中几次都不成功，发生的错误感觉有点难解决，我就重新部署了几次，所以我建议如果部署中真的遇到很多问题，并且发现无前例并一时解决不了时，重新部署吧，按照步骤一步步来。<br>小坑二：<img src="1499656951699.png" alt="Alt text"><br>到这步的时候我建议直接打开项目中_config.yml这个文件，在最后那里修改成这样，很快捷，又不需要找格式错误。</p>
+<p>小坑一：我在部署过程中几次都不成功，发生的错误感觉有点难解决，我就重新部署了几次，所以我建议如果部署中真的遇到很多问题，并且发现无前例并一时解决不了时，重新部署吧，按照步骤一步步来。<br>小坑二：<img src="5.png" alt="Alt text"><br>到这步的时候我建议直接打开项目中_config.yml这个文件，在最后那里修改成这样，很快捷，又不需要找格式错误。</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">deploy:</div><div class="line">  type: git</div><div class="line">  repository: https://github.com/VinJane/VinJane.github.io.git</div><div class="line">  branch: master</div></pre></td></tr></table></figure>
 <p>目前为止，已经可以在线上访问了。来，我们来新建篇文章。</p>
 <blockquote>
@@ -226,7 +226,7 @@ hexo init
 <p>2、 新建文章</p>
 </blockquote>
 <pre><code>hexo new post &quot;article title&quot;
-</code></pre><p>之后在这里就能用markdown编辑了<img src="1499660895783.png" alt="Alt text"></p>
+</code></pre><p>之后在这里就能用markdown编辑了<img src="6.png" alt="Alt text"></p>
 <blockquote>
 <p>3、文章编辑好之后运行生成、部署命令</p>
 </blockquote>
@@ -459,14 +459,6 @@ hexo init
             <input type="checkbox" q-on="click:toggleTag(e)" q-attr="checked:showTags">
           </label>
           <ul class="article-tag-list" q-show="showTags">
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">博客 文章 随笔</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">文章 随笔</a>
-              </li>
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color4">文章 随笔 mac搭建博客</a>
