@@ -8,12 +8,15 @@
   <link rel="dns-prefetch" href="http://yoursite.com">
   <title>VinJane&#39;s Blog</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta property="og:type" content="website">
+  <meta name="description" content="学习是一种信仰">
+<meta property="og:type" content="website">
 <meta property="og:title" content="VinJane's Blog">
 <meta property="og:url" content="http://yoursite.com/index.html">
 <meta property="og:site_name" content="VinJane's Blog">
+<meta property="og:description" content="学习是一种信仰">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="VinJane's Blog">
+<meta name="twitter:description" content="学习是一种信仰">
   
   
     <link rel="icon" href="/favicon.png">
@@ -145,6 +148,56 @@
           <div id="js-content" class="content-ll">
             
   
+    <article id="post-小程序demo" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2017/07/10/小程序demo/">小程序demo</a>
+    </h1>
+  
+
+        
+        <a href="/2017/07/10/小程序demo/" class="archive-article-date">
+  	<time datetime="2017-07-10T04:23:07.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-07-10</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2017/07/10/小程序demo/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+
+
+
+
+
+
+
+  
     <article id="post-我的个人博客生成记" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
@@ -165,7 +218,59 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        
+        <h3 id="hexo-github搭建自己的博客"><a href="#hexo-github搭建自己的博客" class="headerlink" title="hexo+github搭建自己的博客"></a>hexo+github搭建自己的博客</h3><p>1、安装node环境!  <a href="https://nodejs.org/en/" target="_blank" rel="external">https://nodejs.org/en/</a>  下载之后安装即可。<br>2、安装git!  <a href="https://git-scm.com/downloads" target="_blank" rel="external">https://git-scm.com/downloads</a>  链接仅供参考，可自行下载安装。<br>3、有github账号，没有的在<a href="https://github.com/" target="_blank" rel="external">https://github.com/</a>上注册一个。</p>
+<blockquote>
+<p>4、打开终端，输入命令，安装hexo（如果报错去掉sudo，sudo在mac上是以管理员身份运行）</p>
+</blockquote>
+<pre><code>sudo npm install -g hexo
+</code></pre><blockquote>
+<p>5、安装完成之后新建一个文件夹，进入文件夹内执行 init 命令</p>
+</blockquote>
+<pre><code>mkdir myBlog
+cd myBlog
+hexo init
+</code></pre><p>之后你会发现文件夹里是这样的：<br><img src="./1499654304791.png" alt="Alt text"></p>
+<blockquote>
+<p>6、生成静态页面</p>
+</blockquote>
+<pre><code>hexo generate
+</code></pre><blockquote>
+<p>7、本地启动服务器调试</p>
+</blockquote>
+<pre><code>hexo server
+</code></pre><p>启动成功之后访问<a href="http://localhost:4000就可以看到你的主页：" target="_blank" rel="external">http://localhost:4000就可以看到你的主页：</a><br><img src="1499654575466.png" alt="Alt text"></p>
+<blockquote>
+<p>8、接下来可根据自己爱好换主题，（我是先换主题再部署到github）按照主题列表教程就能安装成功</p>
+</blockquote>
+<p><a href="https://github.com/hexojs/hexo/wiki/Themes" target="_blank" rel="external">https://github.com/hexojs/hexo/wiki/Themes</a><br>我的是这个<a href="https://github.com/litten/hexo-theme-yilia" target="_blank" rel="external">https://github.com/litten/hexo-theme-yilia</a><br>大致说下流程：</p>
+<p>安装</p>
+<pre><code>git clone https://github.com/litten/hexo-theme-yilia.git themes/yilia
+</code></pre><p>配置</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">修改hexo根目录下的 _config.yml ： theme: yilia</div></pre></td></tr></table></figure>
+<p>更新</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">cd themes/yilia</div><div class="line">git pull</div></pre></td></tr></table></figure>
+<p>主题配置（主题配置文件在主目录下的_config.yml，请根据自己需要修改吧）<br><img src="1499655917793.png" alt="Alt text"></p>
+<p>注意：安装配置好了之后需要重新生成 hexo generate –deploy 然后启动服务hexo server就能看到这样的（头像是我换了的）<br><img src="1499655235172.png" alt="Alt text"></p>
+<hr>
+<p>到了部署到github上。。。部署这块我是完全参照<a href="http://baixin.io/2015/08/HEXO%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/" target="_blank" rel="external">潘大神</a>的来的，他的部署过程很详细，评论下挺多坑，他都一一解答了的，不做详细介绍了，就谈谈我在部署过程中遇到的一点坑。</p>
+<p>小坑一：我在部署过程中几次都不成功，发生的错误感觉有点难解决，我就重新部署了几次，所以我建议如果部署中真的遇到很多问题，并且发现无前例并一时解决不了时，重新部署吧，按照步骤一步步来。<br>小坑二：<img src="1499656951699.png" alt="Alt text"><br>到这步的时候我建议直接打开项目中_config.yml这个文件，在最后那里修改成这样，很快捷，又不需要找格式错误。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">deploy:</div><div class="line">  type: git</div><div class="line">  repository: https://github.com/VinJane/VinJane.github.io.git</div><div class="line">  branch: master</div></pre></td></tr></table></figure>
+<p>目前为止，已经可以在线上访问了。来，我们来新建篇文章。</p>
+<blockquote>
+<p>1、 先安装一个拓展</p>
+</blockquote>
+<pre><code>npm install hexo-deployer-git --save
+</code></pre><blockquote>
+<p>2、 新建文章</p>
+</blockquote>
+<pre><code>hexo new post &quot;article title&quot;
+</code></pre><p>之后在这里就能用markdown编辑了<img src="1499660895783.png" alt="Alt text"></p>
+<blockquote>
+<p>3、文章编辑好之后运行生成、部署命令</p>
+</blockquote>
+<pre><code>hexo d -g
+</code></pre><p>后序：本人是因为用vue的ui框架看了<a href="http://www.myronliu.com/" target="_blank" rel="external">刘大神</a>的博客，通过刘大神的博客看了<a href="http://baixin.io/#blog" target="_blank" rel="external">潘大神</a>的博客，然后随笔记录了自己搭建一个自己的博客的经验，真的很感谢他们2位，还超级热心帮你解决问题，如对此文章有疑问，欢迎来问，如果觉得此文章有问题也欢迎来纠错，嘿嘿。</p>
+
       
 
       
@@ -173,6 +278,17 @@
     <div class="article-info article-info-index">
       
       
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">文章 随笔 mac搭建博客</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
       
 
       
@@ -341,6 +457,18 @@
             <input type="checkbox" q-on="click:toggleTag(e)" q-attr="checked:showTags">
           </label>
           <ul class="article-tag-list" q-show="showTags">
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">博客 文章 随笔</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color1">文章 随笔</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">文章 随笔 mac搭建博客</a>
+              </li>
             
             <div class="clearfix"></div>
           </ul>
@@ -418,7 +546,7 @@
     
     	<section class="tools-section tools-section-me" q-show="aboutme">
   	  	
-  	  		<div class="aboutme-wrap" id="js-aboutme">能力尚浅&lt;br /&gt;却爱折腾劳碌&lt;br /&gt;我就是我&lt;br /&gt;颜色不一样的烟火&lt;br /&gt;&lt;br /&gt;大神，带我飞呀</div>
+  	  		<div class="aboutme-wrap" id="js-aboutme">能力尚浅&lt;br /&gt;却爱折腾劳碌&lt;br /&gt;我就是我&lt;br /&gt;颜色不一样的烟火&lt;br /&gt;&lt;br /&gt;大神，求带飞呀</div>
   	  	
     	</section>
     
